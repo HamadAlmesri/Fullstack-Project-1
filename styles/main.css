@@ -519,9 +519,12 @@ footer ul {
     header .burger {
         display: none;
     }
-    header .main-nav li {
-        display: inline;
+    header .main-nav li{
+        display: inline-block;
         padding: 0 15px;
+    }
+    header .main-nav {
+        display: flex;
     }
     header a {
         color: black;
@@ -608,9 +611,12 @@ footer ul {
     header .burger {
         display: none;
     }
-    header .main-nav li {
-        display: inline;
+    header .main-nav li{
+        display: inline-block;
         padding: 0 15px;
+    }
+    header .main-nav {
+        display: flex;
     }
     header a {
         color: black;
