@@ -19,7 +19,7 @@ Avenir Next
 Lato
 */
 /*---------------------------------------------*/
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 /*----------------------٢-----------------------*/
 /*                  DEFAULTS                    */
@@ -29,7 +29,17 @@ html, body, h1, h2, p
 وهي الأنماط التي تنطبق على الموقع بشكل عام وكل صفحاته وليس على عنصر معين في صفحة معينة
 */
 /*----------------------------------------------*/
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
 
 
 /*----------------------٣-----------------------*/
@@ -41,58 +51,471 @@ classes
 على سبيل المثال: النمط الخاص بالزر الأزرق الذي يستعمله المصمم في كل الصفحات تقريباً
 */
 /*----------------------------------------------*/
-
-
+.button {
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 17px 60px;
+    border-radius: 40px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #3040C4;
+}
+ul li {
+    list-style: none;
+}
 /*----------------------٤-----------------------*/
 /*                    LAYOUT                    */
 /*                البناء العام للصفحة           */
 /*----------------------------------------------*/
 
+/* .page {
+    background-color: #f2f2f2;
+} */
 
 
 /*----------------------٥-----------------------*/
 /*                    HEADER                    */
 /*----------------------------------------------*/
+header {
+    padding: 15px 20px;
+}
+header li {
+    display: none;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #472fc23a;
+    padding: 15px 12px;
+}
+
+header .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: transparent;
+    border: none;
+    height: 17px;
+    margin: auto 0;
+    outline: none;
+    cursor: pointer;
+}
+header .burger div {
+    background-color: black;
+    display: block;
+    width: 20px;
+    height: 3px;
+    
+}
 
 
 
 /*----------------------٦-----------------------*/
 /*                     HERO                     */
 /*----------------------------------------------*/
-
+.hero {
+    margin-top: 20px;
+}
+.hero .container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hero img {
+    width: 100vw;
+    height: 100%;
+    padding: 1px;
+}
+.hero__desc {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 25px;
+}
+.hero h1 {
+    font-weight: bold;
+    font-size: 38px;
+    text-transform: capitalize;
+}
+.hero p {
+    line-height: 23px;
+}
+.hero .button {
+    background-color: #3040C4;
+}
 
 
 /*----------------------٧-----------------------*/
 /*              MEET YOUR MATCH                 */
 /*----------------------------------------------*/
+.meetYourMatch {
+    z-index: 1;
+    position: relative;
+}
+.meetYourMatch__background {
+    width: 100%;
+    height: 30%;
+    z-index: -1;
+    background-color: #EEF0FC;
+    position: absolute;
+    border-radius: 0 0 18px 18px ;
+}
+.meetYourMatch .meetYourMatchــcontent {
+    padding: 50px 0;
+}
+.meetYourMatch h2 {
+    text-align: center;
+}
+.meetYourMatchــform {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 220px;
+    margin-bottom: 20px;
+}
+.meetYourMatchــform input[type=text] {
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 17px 10px 17px 40px;
+    position: relative;
+    left: 20px;
+    font-weight: bold;
+    border: 1px solid #3040C4;
+    border-right: none;
+    outline: none;
+    border-radius: 40px 0 0 40px;
+    background-image: url("../images/map-pin.png");
+    background-repeat: no-repeat;
+    background-position: 15px;
 
+}
+::placeholder {
+    color: #3040C4;
+    font-weight: 300;
+    padding-left: 15px;
+}
+.meetYourMatchــform .button {
+    padding: 18px 50px;
+    position: relative;
+    right: 20px;
+    background-color: #3040C4;
+}
+.meetYourMatchــform input[type=checkbox] {
+    visibility: hidden;
+}
 
-
+.meetYourMatch .switcher {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.meetYourMatch .switcher span {
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #3e24c4;
+}
+.meetYourMatch .meetYourMatchــform .button {
+    background-color: #472FC2;
+}
+.meetYourMatch img {
+    height: 100%;
+    width: 100%;
+}
+.meetYourMatch .widgets {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.meetYourMatch .widget {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    box-shadow: 5px 5px 5px 5px #EEF0FC;
+}
+.meetYourMatch .widget__desc {
+    padding: 10px 20px;
+    width: 232px;
+}
+.meetYourMatchــform, .meetYourMatch h2 {
+    padding: 12px;
+}
 /*----------------------٨-----------------------*/
 /*               HOW IT WORKS                   */
 /*----------------------------------------------*/
-
+.howItWorks {
+    margin-top: 80px;
+}
+.howItWorks .container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.howItWorks .widgets {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.howItWorks .widget {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.howItWorks .widget__desc {
+    margin-top: 30px;
+    text-align: center;
+    width: 75%;
+    
+}
+.howItWorks .widget h3 {
+    text-transform: capitalize;
+}
+.howItWorks .widget p {
+    font-weight: 300;
+    padding-top: 12px;
+    color: gray;
+    text-align: center;
+    list-style: 50px;
+}
+.howItWorks .widget__image{
+    display: inline;
+}
 
 
 /*----------------------٩-----------------------*/
 /*                 STORIES                      */
 /*----------------------------------------------*/
-
-
-
+.stories {
+    padding: 12px;
+    margin-top: 50px;
+    background-color: #F6F6F9;
+    padding: 30px 0 80px 0;
+}
+.stories .container {
+    display: flex;
+    flex-flow : column nowrap;
+    text-align: center;
+}
+.stories .widgets {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items : center;
+}
+.stories .widget {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: left;
+    width: 20em;
+    padding: 20px;
+}
+.stories .widget .widget__desc {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    height: 5em;
+}
+.stories h2 {
+    padding: 15px;
+}
+.stories .heading-paragraph {
+    width: 360px;
+    font-weight: 300;
+    margin: 0 auto;
+    padding: 15px 15px 30px 15px;
+}
+.stories .widget h3 {
+    font-weight: 300;
+}
+.stories .widget a {
+    font-size: 0.8rem;
+}
+.stories .widget img {
+    width: 100%;
+}
 /*----------------------١٠----------------------*/
 /*       Actions: Change A Life, Adopt A Pet    */
 /*----------------------------------------------*/
+.actions {
+    background-color: #3040C4;
+    padding: 3em 2em;
+}
+.actions .container {
+    color: #fff;
+    text-align: center;
+}
+.actions h2 {
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+.actions .button  {
+    color: #3040C4;
+    background-color: #fff;
+    padding: 12px 35px;
+}
 
+
+.actions .is-outline {
+    border: 1px solid #fff;
+    color: #fff;   
+    background-color: transparent;
+    margin-left: 12px;
+}
 
 
 /*---------------------١١-----------------------*/
 /*                    FOOTER                    */
 /*----------------------------------------------*/
 
+footer{
+    padding: 3em 2em;
+}
+footer .container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 450px;
+}
+footer .copyrights {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100px;
+}
+footer .footer-nav {
+    height: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+footer .item {
+    display: flex;
+    flex-flow: column nowrap ;
+    justify-content: space-between;
+    width: 50%;
+    /* padding: 0 20px; */
+    text-transform: capitalize;
+    color: black;
+    height: 120px;
+}
+footer .item h5 {
+    font-weight: bold;
+}
+footer a {
+    color: black;
+    font-weight: 300;
+}
+footer ul {
+    display: inline;
+    line-height: 35px;
+}
 
 
 /*----------------------١٢----------------------*/
 /*                    Responsive                */
 /*       كل ما هو متعلق بالهواتف والتابلت       */
 /*----------------------------------------------*/
+/* TABLET */
+@media (min-width: 768px) and (max-width : 1024px) {
+    /* Header */
+    header .burger {
+        display: none;
+    }
+    header .main-nav li{
+        display: inline;
+        padding: 0 15px;
+    }
+    header a {
+        color: black;
+    }
+    header .container {
+        border: none;
+    }
+    /* ^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+    /* Hero */
+    .hero__desc {
+        width: 50%;
+        padding-left: 40px;
+    }
+    .hero .container {
+        flex-wrap: nowrap;
+    }
+    .hero__image {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .hero img {
+        width: 50vw;
+        height: 75%;
+        padding: 25px;
+    }
+    /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+    /* MeetYourMatch */
+    .meetYourMatch__background {
+        width: 90%;
+        right: 5%;
+        height: 40%;
+        border-radius: 40px;
+    }
+    .meetYourMatchــform input[type=text] {
+        padding: 17px 120px 17px 40px;
+    }
+    .meetYourMatch .widgets {
+        margin: auto;
+        width: 70vw;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .meetYourMatch .widget {
+        margin: 10px;
+    }
+    /* ^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+    /* Stories */
+    .stories .widgets {
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 8%;
+    }
+    .stories .heading-paragraph {
+        width: 560px;
+    }
+    /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+    /* footer */
+    footer .container {
+        flex-flow: row nowrap;
+        align-items: center;
+        height: 300px;
+    }
+    footer .footer-nav {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        height: 200px;
+    }
+    footer .item {
+        display:block ;
+        width: auto;
+        padding: 15px;
+    }
+}
