@@ -104,7 +104,7 @@ header {
     padding: 15px 20px;
 }
 
-header li {
+header .main-nav {
     display: none;
 }
 
@@ -152,7 +152,6 @@ header .burger div {
 
 .hero img {
     width: 100vw;
-    height: 100%;
     padding: 1px;
 }
 
