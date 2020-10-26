@@ -83,7 +83,9 @@ a {
 ul li {
     list-style: none;
 }
-
+.center {
+    text-align: center;
+}
 /*----------------------٤-----------------------*/
 
 /*                    LAYOUT                    */
@@ -295,6 +297,7 @@ header .burger div {
 .meetYourMatchــform, .meetYourMatch h2 {
     padding: 12px;
 }
+
 
 /*----------------------٨-----------------------*/
 

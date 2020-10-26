@@ -1,6 +1,7 @@
 
 
  const renderCards = (filteredData , root) => 
+
 filteredData.map((card) => {
     // Create Elemnets
     const widget = document.createElement("div");

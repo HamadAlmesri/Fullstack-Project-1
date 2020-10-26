@@ -1,6 +1,6 @@
 import renderCards from "./renderCards.js";
 import petsData from "./data.js";
-// global
+
 const subButton = document.querySelector("#button");
 const root = document.querySelector("#root");
 const emptyRoot = () => (root.innerHTML = "");
@@ -9,6 +9,7 @@ const error = (reason) => {
   const msg = document.createElement("h1");
   root.appendChild(msg);
   msg.innerHTML = reason;
+  msg.style.textAlign ="center"
 };
 
 const cards = () => {
