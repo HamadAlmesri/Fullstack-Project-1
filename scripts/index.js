@@ -23,7 +23,6 @@ const cards = () => {
   if (filteredData.length === petsData.length) {
     error(`You need to spicify a city🔎🌏 hint : use  hawally , hateen , zahra , salam`);
   } else if (filteredData == 0) {
-    emptyRoot();
     error(`Nothing found 🔎🌏 hint : use  hawally , hateen , zahra , salam`);
   } else {
     renderCards(filteredData, root);
