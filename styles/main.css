@@ -657,7 +657,7 @@ footer ul {
         width: 70vw;
         flex-flow: row wrap;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
     }
     .meetYourMatch .widget {
         margin: 10px;
