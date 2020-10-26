@@ -31,5 +31,4 @@ const cards = (e) => {
 };
 
 // Listners
-addEventListener("input", cards);
 subButton.addEventListener("click", cards);
