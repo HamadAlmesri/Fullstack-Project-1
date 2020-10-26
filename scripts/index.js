@@ -12,7 +12,8 @@ const error = (reason) => {
   msg.style.textAlign ="center"
 };
 
-const cards = () => {
+const cards = (e) => {
+  e.preventDefault()
   const searchQuery = document.querySelector("#search").value;
 
   emptyRoot();
